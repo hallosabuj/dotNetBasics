@@ -1,0 +1,57 @@
+#!markdown
+
+#### Type conversion
+
+#!csharp
+
+byte b=1;
+int i=b;
+System.Console.WriteLine(i);
+
+#!markdown
+
+#### Explicit type conversion
+
+#!csharp
+
+byte b1=(byte) i; // Won't compile without type conversion
+System.Console.WriteLine(b1);
+
+#!markdown
+
+#### Conversion using external libraries
+
+#!csharp
+
+var num="1000";
+int numInt=Convert.ToInt32(num);
+System.Console.WriteLine(numInt);
+
+#!csharp
+
+try{
+    byte numByte=Convert.ToByte(num);   // It is can't convert then it throws an error
+    System.Console.WriteLine(numByte);
+}
+catch (System.Exception){
+    // throw;
+    System.Console.WriteLine("Can't convert to byte");
+}
+
+#!csharp
+
+try{
+    bool numByte=Convert.ToBoolean("TRUE"); // True can be written in any case
+    System.Console.WriteLine(numByte);
+}
+catch (System.Exception){
+    System.Console.WriteLine("Can't convert to boolean");
+}
+
+#!csharp
+
+int num1=10;
+int num2=3;
+System.Console.WriteLine(num1/num2); // This will resilt in an integer value
+// At least one number should be converted to float to get a floting point result
+System.Console.WriteLine("Result is: "+(float)num1/num2);

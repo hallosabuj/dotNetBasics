@@ -1,0 +1,43 @@
+#!markdown
+
+#### Loops are similar to c/c++
+
+#!markdown
+
+#### For loop
+
+#!csharp
+
+int sum=0;
+for(int i=1;i<=10;i++){
+    sum+=i;
+}
+System.Console.WriteLine(sum);
+
+#!markdown
+
+#### While loop
+
+#!csharp
+
+int sum=0;
+int j=1;
+while(j<=10){
+    sum+=j;
+    j++;
+}
+System.Console.WriteLine(sum);
+
+#!markdown
+
+#### Do-while loop
+
+#!csharp
+
+int sum=0;
+int k=10;
+do{
+    sum+=k;
+    k--;
+}while(k>=1);
+System.Console.WriteLine(sum);

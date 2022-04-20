@@ -1,0 +1,49 @@
+#!markdown
+
+#### Comparison Operators
+1. Equal to                 ==
+2. Less than                <
+3. Greater than             >
+4. Less than equal to       <=
+5. Greater than equal to    >=
+6. Not equal to             !=
+
+#!csharp
+
+int num=10;
+
+#!csharp
+
+if(num==10){
+    Console.WriteLine("Number is equal to 10");
+}
+
+#!csharp
+
+if(num<15){
+    Console.WriteLine("Number is less than 15");
+}
+
+#!csharp
+
+if(num>5){
+    Console.WriteLine("Number is greater than 5");
+}
+
+#!csharp
+
+if(num<=15){
+    Console.WriteLine("Number is less than equal to 15");
+}
+
+#!csharp
+
+if(num>=5){
+    Console.WriteLine("Number is greater than equal to 5");
+}
+
+#!csharp
+
+if(num!=100){
+    Console.WriteLine("Number is not equal to 100");
+}

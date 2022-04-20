@@ -1,0 +1,21 @@
+#!markdown
+
+#### Arithmatic operations
+1. Addition
+2. Sumbraction
+3. Multiplication
+4. Division
+5. Modulus
+
+#!csharp
+
+int num1=10;
+int num2=5;
+
+#!csharp
+
+Console.WriteLine($"{num1} + {num2} = {num1+num2}");
+Console.WriteLine($"{num1} - {num2} = {num1-num2}");
+Console.WriteLine($"{num1} * {num2} = {num1*num2}");
+Console.WriteLine($"{num1} / {num2} = {num1/num2}");
+Console.WriteLine($"{num1} % {num2} = {num1%num2}");

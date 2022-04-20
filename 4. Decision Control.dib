@@ -1,0 +1,15 @@
+#!markdown
+
+#### Enter your age and program will print wheather you are eligible to drive or not
+
+#!csharp
+
+System.Console.Write("Enter you age: ");
+int age=Convert.ToInt32(Console.ReadLine());
+if(age<10){
+    System.Console.WriteLine("You are too young");
+}else if (age>18 && age <=60 ){
+    System.Console.WriteLine("You can drive");
+}else{
+    System.Console.WriteLine("You can not drive");
+}

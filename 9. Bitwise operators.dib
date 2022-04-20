@@ -1,0 +1,39 @@
+#!markdown
+
+#### Bitwise operators
+1. Bitwisr and &
+2. Bitwisr or |
+3. Bitwisr xor ^
+4. Bitwisr complement ~
+5. Bitwisr left shift <<
+6. Bitwisr right shift >>
+
+#!csharp
+
+int number=7;
+Console.WriteLine($"{number} & {3} = {number&3}");
+
+#!csharp
+
+int number=7;
+Console.WriteLine($"{number} | {16} = {number|16}");
+
+#!csharp
+
+int number=7;
+Console.WriteLine($"{number} ^ {3} = {number^3}");
+
+#!csharp
+
+int number=7;
+Console.WriteLine($"{number} << {1} = {number<<1}");
+
+#!csharp
+
+int number=7;
+Console.WriteLine($"{number} >> {1} = {number>>1}");
+
+#!csharp
+
+int number=7;
+Console.WriteLine($"~{number} = {~number}");

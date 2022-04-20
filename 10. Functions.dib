@@ -1,0 +1,45 @@
+#!markdown
+
+#### Functions
+
+#!markdown
+
+##### Function with no return type
+
+#!csharp
+
+void greetPerson(string name){
+    Console.WriteLine($"Hello {name}, how are you?");
+}
+greetPerson("Sabuj");
+
+#!markdown
+
+##### Function with return type
+
+#!csharp
+
+int factorial(int n){
+    if(n<=1){
+        return 1;
+    }else{
+        return n*factorial(n-1);
+    }
+}
+Console.WriteLine($"Factorial of 5 is {factorial(5)}");
+
+#!markdown
+
+##### Function Overloading
+
+#!csharp
+
+float Average(int a, int b){
+    return (a+b)/2.0F;
+}
+float Average(int a, int b, int c){
+    return (a+b+c)/3.0f;
+}
+
+Console.WriteLine("Average of 12 and 18 is " + Average(12,18));      // Function with 2 arguments called here
+Console.WriteLine("Average of 12, 18 and 20 is {0}",Average(12,18,20));   // Function with 3 arguments called here

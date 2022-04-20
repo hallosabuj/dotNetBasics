@@ -1,0 +1,27 @@
+#!markdown
+
+#### Logical operators
+1. And          &&
+2. Or           ||
+3. Not          !
+
+#!csharp
+
+int age=25;
+if(age>20 && age<30){
+    Console.WriteLine("Your age is between 20-30, you can play this game");
+}
+
+#!csharp
+
+int age=15;
+if(age<21 || age>=30){
+    Console.WriteLine("You can't play this game, you are either young or old for this game");
+}
+
+#!csharp
+
+int age=30;
+if(!(age<18)){
+    Console.WriteLine("You are eligible to get married.");
+}
