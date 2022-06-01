@@ -1,0 +1,43 @@
+#!markdown
+
+#### Exception handling
+
+#!csharp
+
+int[] myNumbers = {1, 2, 3};
+try{
+    Console.WriteLine(myNumbers[10]);
+}catch(IndexOutOfRangeException e){
+    Console.WriteLine(e.Message);
+}
+
+#!csharp
+
+try{
+  int[] myNumbers = {1, 2, 3};
+  Console.WriteLine(myNumbers[10]);
+}
+catch (Exception e){
+  Console.WriteLine("Something went wrong.");
+}
+finally{
+  Console.WriteLine("The 'try catch' is finished.");
+}
+
+#!markdown
+
+#### throw
+This keyword can be used to throw user defined exception
+
+#!csharp
+
+void checkAge(int age){
+    if(age<18){
+        throw new ArithmeticException("Access denied! You are below 18");
+    }else{
+        Console.WriteLine("Access granted! You are above 18");
+    }
+}
+
+// checkAge(15); // This will thorw the user defined exception
+checkAge(20); // This will not throw the exception

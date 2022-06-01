@@ -30,7 +30,7 @@ System.Console.WriteLine(numInt);
 #!csharp
 
 try{
-    byte numByte=Convert.ToByte(num);   // It is can't convert then it throws an error
+    byte numByte=Convert.ToByte(num);   // If it can't convert then it throws an error
     System.Console.WriteLine(numByte);
 }
 catch (System.Exception){

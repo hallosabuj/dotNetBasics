@@ -1,0 +1,36 @@
+#!markdown
+
+##### A property is like a combination of a variable and a method, and it has two methods:
+1. get method
+2. set method
+
+#!csharp
+
+class Person
+{
+  private string name;  // field
+  public string Name{   // property
+    get { return name; }
+    set { name = value; }
+  }
+}
+
+Person myObj = new Person();
+myObj.Name = "Liam";
+Console.WriteLine(myObj.Name);
+
+#!markdown
+
+##### Automatic properties
+
+#!csharp
+
+class Person
+{
+  public string Name  // property
+  { get; set; }
+}
+
+Person myObj = new Person();
+myObj.Name = "Liam";
+Console.WriteLine(myObj.Name);

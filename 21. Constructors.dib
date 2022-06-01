@@ -1,0 +1,24 @@
+#!markdown
+
+#### Constructors
+
+#!csharp
+
+class Car{
+    string color;
+    string model;
+    // Constructor should be a public method always
+    public Car(string color,string model){
+        this.color=color;
+        this.model=model;
+    }
+    public void printDetails(){
+        Console.WriteLine($"Color:  {this.color}");
+        Console.WriteLine($"Model:  {this.model}");
+    }
+}
+
+#!csharp
+
+Car c1=new Car("Red","Mustang");
+c1.printDetails();

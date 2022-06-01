@@ -1,0 +1,55 @@
+#!markdown
+
+#### Working with files
+
+#!csharp
+
+using System.IO;
+
+#!markdown
+
+1. Write a line to a file
+
+#!csharp
+
+string writeText="Hello World\n";
+File.WriteAllText("temp.txt",writeText);
+
+#!markdown
+
+2. Append a line to the file
+
+#!csharp
+
+string line="This line is appending\n";
+File.AppendAllText("temp.txt",line);
+
+#!markdown
+
+3. Read one line
+
+#!csharp
+
+string[] allLines=File.ReadAllLines("temp.txt");
+for(int i=0;i<allLines.Length;i++){
+    Console.WriteLine(allLines[i]);
+}
+
+#!markdown
+
+4. Working with file modes
+
+#!csharp
+
+FileStream f=File.Open("temp.txt",System.IO.FileMode.Append);
+f.Write(Encoding.ASCII.GetBytes("This is new line"));
+f.Close();
+
+#!csharp
+
+// System.IO.FileMode.Create            if dosen't exists create new, otherwise delete all contents
+// System.IO.FileMode.CreateNew         if dosen't exists create new, otherwise throw error 
+// System.IO.FileMode.OpenOrCreate      if exist then open
+// System.IO.FileMode.Open              if exist then open otherwise throw error and cursor is at the begining
+// System.IO.FileMode.Append            if exist then open and cursor points at the end, otherwise create new
+// System.IO.FileMode.Truncate          if exist then delete all contents, otherwise throw error

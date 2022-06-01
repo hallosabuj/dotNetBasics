@@ -1,0 +1,53 @@
+#!markdown
+
+#### Interface
+
+#!markdown
+
+1. Implementing single interface
+
+#!csharp
+
+interface IAnimal{
+    // Interface can not contains a instance field
+    void animalSound();
+}
+
+class Dog:IAnimal{
+    public void animalSound(){
+        Console.WriteLine("Barking");
+    }
+    public void sleep(){
+        Console.WriteLine("Zzzz");
+    }
+}
+
+Dog myDog=new Dog();
+myDog.animalSound();
+myDog.sleep(); // If we create an instance of IAnimal then sleep will not be accissible
+
+#!markdown
+
+2. Implementing multiple interface
+
+#!csharp
+
+interface IWaterVechicle{
+    void canFloat();
+}
+interface IAirVehicle{
+    void canFly();
+}
+
+class ModifiedCar:IWaterVechicle,IAirVehicle{
+    public void canFloat(){
+        Console.WriteLine("Modified car can float");
+    }
+    public void canFly(){
+        Console.WriteLine("Modified car fly");
+    }
+}
+
+ModifiedCar myCar=new ModifiedCar();
+myCar.canFloat();
+myCar.canFly();

@@ -1,0 +1,27 @@
+#!markdown
+
+#### Math Functions
+
+#!csharp
+
+int a=Math.Max(12,234);
+System.Console.WriteLine(a);
+
+#!csharp
+
+int b=(int)Math.Sqrt(36);
+System.Console.WriteLine(b);
+
+#!csharp
+
+int c=Math.Abs(-34);
+System.Console.WriteLine(c);
+
+#!csharp
+
+int num=(int)Math.Ceiling(12.5);
+Console.WriteLine(num);
+
+#!csharp
+
+// There are several similar math functions

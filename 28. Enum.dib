@@ -1,0 +1,12 @@
+#!markdown
+
+#### Enumerations
+
+#!csharp
+
+enum Lavel{
+    High,Medium,Low
+}
+
+Lavel myValue=Lavel.Medium;
+Console.WriteLine(myValue);

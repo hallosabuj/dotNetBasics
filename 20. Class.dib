@@ -1,0 +1,31 @@
+#!markdown
+
+#### Writing a simple class to illustrate how to write a class
+
+#!csharp
+
+class Car{
+    public string colour;
+    public string company;
+    public int noOfWheels;
+    public void drive(){
+        Console.WriteLine("Car started...");
+    }
+    public void stop(){
+        Console.WriteLine("Car stopped...");
+    }
+}
+
+#!csharp
+
+// Creating a class object
+Car car1=new Car();
+car1.colour="Black";
+car1.company="Suzuki";
+car1.noOfWheels=4;
+Console.WriteLine(car1.colour);
+Console.WriteLine(car1.company);
+Console.WriteLine(car1.noOfWheels);
+
+car1.drive();
+car1.stop();

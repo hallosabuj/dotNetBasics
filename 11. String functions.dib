@@ -1,0 +1,38 @@
+#!markdown
+
+#### String Functions
+
+#!csharp
+
+string name="my name is sabuj";
+System.Console.WriteLine(name.Length);
+
+#!csharp
+
+string name="my name is sabuj";
+System.Console.WriteLine(name.ToUpper());
+
+#!csharp
+
+string name="my name is sabuj";
+System.Console.WriteLine(name.ToLower());
+
+#!csharp
+
+string name="my name is sabuj";
+System.Console.WriteLine(name[0]);
+
+#!csharp
+
+string name="my name is sabuj";
+System.Console.WriteLine(name.IndexOf("my"));
+
+#!csharp
+
+string name="my name is sabuj";
+System.Console.WriteLine(name.IndexOf("name"));
+
+#!csharp
+
+string name="my name is sabuj";
+System.Console.WriteLine(name.Substring(3));

@@ -1,0 +1,17 @@
+#!markdown
+
+#### Arrays
+
+#!csharp
+
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+foreach (string i in cars){
+  Console.WriteLine(i);
+}
+
+#!csharp
+
+int [] marks={1,2,3,4,5,6};
+foreach(int i in marks){
+    Console.Write(i+" ");
+}
